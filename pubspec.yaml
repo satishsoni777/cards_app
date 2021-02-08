@@ -24,8 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_common_poc: 
-     git:
-       url: https://github.com/satishsoni777/flutter_common.git
+     path: ../flutter_common_poc/
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

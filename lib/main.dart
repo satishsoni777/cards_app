@@ -1,10 +1,9 @@
 import 'package:cards_app/auth/auth_page.dart';
-import 'package:cards_app/auth/webservices/base_req_impl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_common_poc/flutter_common_poc.dart';
 
 void main() {
-  Injector.getIt.registerSingleton<BaseRequest>(BaseReqImpl());
+  Injector.setup();
   runApp(MyApp());
 }
 
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       // routes: Injector.getIt.get<Routes>().home,
       home: AuthPage(),
-      routes: {"/home": (c) => Screen1()},
+      routes: {"/home": (c) => HomePage()},
     );
   }
 }
